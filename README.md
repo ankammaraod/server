@@ -16,7 +16,7 @@ ex- startServer(1234,handler)
 
 ```js
 // Import startServer and createRouter.
-const {startServer,createRouter}=require('httpServer');
+const {startServer,createRouter}=require('server');
 
 // Pass list of handlers to createRouter to get router back.
 const router=createRouter([handlers...]);
