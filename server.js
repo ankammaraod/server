@@ -1,9 +1,7 @@
 const http = require('http');
 
 const startServer = (port, handler) => {
-  const server = http.createServer((request, response) => {
-    handler(request, response);
-  });
+  const server = http.createServer(handler);
   server.listen(port, () => console.log(`server listening on ${port}`));
 };
 
